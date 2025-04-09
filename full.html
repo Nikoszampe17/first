@@ -1,0 +1,38 @@
+<section id="contact">
+  <h2>Contact & Appointment Request</h2>
+  <p>Please fill out the form below to request an appointment and share your symptoms. I’ll get back to you as soon as possible.</p>
+
+  <form action="mailto:zampetakisnikos@gmail.com" method="POST" enctype="text/plain">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="Full Name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="Email" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="Phone Number" required><br><br>
+
+    <label for="symptoms">Describe your symptoms:</label><br>
+    <textarea id="symptoms" name="Symptoms Description" rows="4" required></textarea><br><br>
+
+    <label for="duration">How long have you had these symptoms?</label><br>
+    <input type="text" id="duration" name="Duration"><br><br>
+
+    <label for="pain">Pain level (0–10):</label><br>
+    <input type="range" id="pain" name="Pain Level" min="0" max="10"><br><br>
+
+    <label>Area(s) affected:</label><br>
+    <input type="checkbox" name="Affected Area" value="Neck"> Neck<br>
+    <input type="checkbox" name="Affected Area" value="Back"> Back<br>
+    <input type="checkbox" name="Affected Area" value="Shoulder"> Shoulder<br>
+    <input type="checkbox" name="Affected Area" value="Knee"> Knee<br>
+    <input type="checkbox" name="Affected Area" value="Other"> Other<br><br>
+
+    <label for="appointment">Preferred appointment time:</label><br>
+    <input type="text" id="appointment" name="Preferred Time"><br><br>
+
+    <input type="submit" value="Submit Request">
+  </form>
+
+  <p><strong>Note:</strong> This form opens your email app to send the data. Make sure it's set up correctly on your device.</p>
+</section>
